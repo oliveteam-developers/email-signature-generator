@@ -1,5 +1,6 @@
 {
-  "name": "google-sheets-to-json",
+  "name": "email-signature-generator",
+  "author": "Olive Software",
   "version": "0.0.1",
   "private": true,
   "dependencies": {

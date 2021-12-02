@@ -1,6 +1,4 @@
-# ReactJS Project Template
-
-*Using jsx, bootstrap, antd, redux thunk, axios*
+# Email Signature Generator
 
 ### I. Install packages
 
