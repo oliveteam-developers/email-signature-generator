@@ -94,7 +94,7 @@ const Home = () => {
                     <tr>
                       <td>
                         <a href="https://www.olive-team.dev/">
-                          <img border="0" width="80px" alt="" src="https://olive-software-company.s3.ap-southeast-1.amazonaws.com/logo/logo-80x73.png" />
+                          <img border="0" width="60px" alt="" src="https://olive-software-company.s3.ap-southeast-1.amazonaws.com/logo/logo-60x54.png" />
                         </a>
                       </td>
 
