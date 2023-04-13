@@ -9,7 +9,8 @@ const Home = () => {
     title: 'Founder & CEO',
     phoneNumber: '(84) 93429 9871',
     email: 'ceo@olive-team.dev',
-    address: 'London, UK'
+    address: 'London, UK',
+    booking: '',
   });
 
   const handleChange = (e, type) => {
@@ -80,6 +81,11 @@ const Home = () => {
                   <h3>Address</h3>
                   <Input onChange={(e) => handleChange(e, 'address')} value={data.address} />
                 </div>
+
+                <div className="item">
+                  <h3>Booking</h3>
+                  <Input onChange={(e) => handleChange(e, 'booking')} value={data.booking} />
+                </div>
               </form>
 
               <div className="copy-btn">
@@ -106,15 +112,19 @@ const Home = () => {
 
                         <table className="table-info" border="0" cellSpacing="0" cellPadding="0">
                           <tbody>
-                            <tr>
-                              <td>Phone:</td>
-                              <td>{data.phoneNumber}</td>
-                            </tr>
+                            {data.phoneNumber && data.phoneNumber.trim() !== '' && (
+                              <tr>
+                                <td>Phone:</td>
+                                <td>{data.phoneNumber}</td>
+                              </tr>
+                            )}
 
-                            <tr>
-                              <td>Email:</td>
-                              <td>{data.email}</td>
-                            </tr>
+                            {data.email && data.email.trim() !== '' && (
+                              <tr>
+                                <td>Email:</td>
+                                <td>{data.email}</td>
+                              </tr>
+                            )}
 
                             <tr>
                               <td>Website:</td>
@@ -123,10 +133,19 @@ const Home = () => {
                               </td>
                             </tr>
 
-                            <tr>
-                              <td>Address:</td>
-                              <td>{data.address}</td>
-                            </tr>
+                            {data.address && data.address.trim() !== '' && (
+                              <tr>
+                                <td>Address:</td>
+                                <td>{data.address}</td>
+                              </tr>
+                            )}
+
+                            {data.booking && data.booking.trim() !== '' && (
+                              <tr>
+                                <td>Booking:</td>
+                                <td>{data.booking}</td>
+                              </tr>
+                            )}
                           </tbody>
                         </table>
 
